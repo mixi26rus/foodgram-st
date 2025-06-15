@@ -41,7 +41,7 @@ docker compose up --build
 Далее нужно выполнить миграции внутри БД:
 
 ```bash
-docker compose exec backend python manage.py makemigrations users
+docker docker compose exec backend python manage.py makemigrations users
 ```
 
 ```bash
@@ -61,7 +61,7 @@ docker compose exec backend python manage.py collectstatic
 И последний шаг – загрузить ингредиенты в БД :
 
 ```bash
-docker compose exec backend python manage.py upload_bd
+docker compose exec backend python manage.py load_bd
 ```
 
 ### Доступ к страницам по ссылкам:
