@@ -3,7 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import (IsAuthenticatedOrReadOnly, AllowAny,
                                         IsAuthenticated)
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, redirect
 from users.models import CustomUser, Subscription
 from recipes.models import (Recipe, Ingredient, Favorite,
                             ShoppingCart, RecipeIngredient)
