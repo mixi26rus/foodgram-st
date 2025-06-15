@@ -63,7 +63,7 @@ jobs:
         with:
           context: ./backend/
           push: true
-          tags: maxim190404/foodgram-st_backend:latest 
+          tags: mixi26rus/foodgram-st_backend:latest 
 
 
   build_frontend_and_push_to_docker_hub:
@@ -85,7 +85,7 @@ jobs:
         with:
           context: ./frontend/
           push: true
-          tags: maxim190404/foodgram-st_frontend:latest
+          tags: mixi26rus/foodgram-st_frontend:latest
 
 
   build_gateway_and_push_to_docker_hub:
@@ -106,4 +106,4 @@ jobs:
         with:
           context: ./infra/
           push: true
-          tags: maxim190404/foodgram-st_gateway:latest 
+          tags: mixi26rus/foodgram-st_gateway:latest 
